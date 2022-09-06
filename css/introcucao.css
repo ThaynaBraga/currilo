@@ -1,0 +1,34 @@
+.introducao-bg {
+  background: linear-gradient(to right, white 5%, #111111 0%);
+  border-radius: 4px;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: #ffffff;
+  justify-items: center;
+  gap: 0 20px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.introducao h1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 650px) {
+  .introducao img {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .introducao-bg {
+    background: linear-gradient(to right, white 15%, #111111 0%);
+  }
+}

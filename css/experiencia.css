@@ -1,0 +1,73 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 0px;
+  box-sizing: border-box;
+}
+
+.texto {
+  margin-top: 60px;
+}
+
+.experiencia p {
+  padding-top: 20px;
+  grid-column: 1;
+}
+
+.empresas-trabalhadas {
+  display: grid;
+  gap: 20px;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.empresas {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.empresas:nth-child(odd) {
+  padding-bottom: 20px;
+  border-bottom: 4px solid #caf;
+}
+
+.empresas p {
+  max-width: 40ch;
+}
+
+.empresas span {
+  position: relative;
+}
+
+.empresas span::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 100%;
+  background: #caf;
+  position: absolute;
+  left: -10px;
+}
+
+@media (max-width: 1050px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+  }
+  .texto {
+    margin-top: 30px;
+  }
+  .empresas p {
+    max-width: 45ch;
+}
+
+@media (max-width: 700px) {
+  .empresas p {
+    max-width: 35ch;
+  }
+}
+@media (max-width: 550px) {
+  .empresas {
+    grid-template-columns: 1fr;
+  }
+}

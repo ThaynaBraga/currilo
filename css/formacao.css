@@ -1,0 +1,46 @@
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formacao .texto {
+  grid-column: 1;
+}
+
+.cursos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+}
+.cursos {
+  flex: 1;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  text-align: center;
+  border-left: 4px solid #caf;
+}
+
+.cursos p,
+span {
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .formacao {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .cursos-lista {
+    gap: 20px;
+    padding: 30px 0px;
+  }
+  .cursos {
+    padding: 10px;
+  }
+}

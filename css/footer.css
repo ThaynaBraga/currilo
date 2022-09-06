@@ -1,0 +1,32 @@
+.contato-bg {
+  background-image: linear-gradient(to right, black 100%, white 0%);
+}
+
+.footer {
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.footer p {
+  color: #fff;
+  max-width: 40ch;
+}
+
+.footer img {
+  margin-bottom: 10px;
+}
+
+.redes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

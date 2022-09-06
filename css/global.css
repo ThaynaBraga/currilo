@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+/* Tipografia */
+.font-xxl {
+  font: 600 4rem/1.112 "Poppins", sans-serif;
+}
+
+.font-xl {
+  font: 600 2.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-l {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-m {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.font-s {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+/* Cores */
+
+.cor-lilas {
+  color: #caf;
+}
+@media (max-width: 1000px) {
+  .font-xxl {
+    font-size: 2.925rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-xl {
+    font-size: 1.825rem;
+  }
+  .container {
+    padding: 60px 30px;
+  }
+  .font-l {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 600px) {
+  .font-xxl {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding: 30px;
+  }
+}
